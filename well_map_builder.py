@@ -21,12 +21,12 @@ def generate_well_map(params: dict | None = None) -> dict:
         params = {}
 
     dataset_path = params.get("dataset_path", r"Датасет_обновл.xlsx")
-    inclinometry_path = params.get("inclinometry_path", r"ЗУБ инклинометрия.xlsx")
+    inclinometry_path = params.get("inclinometry_path", r"Инклинометрия.xlsx")
     constructed_wells_file = params.get("constructed_wells_file", r"constructed_wells_2.xlsx")
     slice_points_file = params.get("slice_points_file", r"slice_points.xlsx")
-    kpngz_file = params.get("kpngz_file", r"Б10_КПНГЗ_09.2024.grd")
-    kr_file = params.get("kr_file", r"Б10_АО.кр.кол_9.2024.grd")
-    pod_file = params.get("pod_file", r"Б10_АО.под.кол_03.2024.grd")
+    kpngz_file = params.get("kpngz_file", r"КПНГЗ_2000.grd")
+    kr_file = params.get("kr_file", r"АО.кр.кол_2000.grd")
+    pod_file = params.get("pod_file", r"АО.под.кол_2000.grd")
     output_html = params.get("output_html", "well_map.html")
 
     try:
