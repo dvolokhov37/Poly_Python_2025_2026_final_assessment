@@ -79,7 +79,7 @@ def generate_well_map(params: dict | None = None) -> dict:
         df_slice_points = pd.read_excel(slice_points_file)
         mouth_points = []
 
-        # --- Обработка скважин из ЗУБ инклинометрии ---
+        # --- Обработка скважин из Инклинометрии ---
         for well in sorted(common_wells):
             df_well = df_inclin_filtered[df_inclin_filtered["СКВАЖИНА"] == well].copy()
             df_well.sort_values(by="ГЛУБИНА", ascending=False, inplace=True)
